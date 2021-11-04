@@ -1,0 +1,140 @@
+.forms-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.form-group {
+  background: #fff;
+  min-height: 300px;
+  min-width: 300px;
+  color: #042f29;
+  width: 90%;
+  margin-top: 10px;
+  border-radius: 15px;
+  max-width: 850px;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.form-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 0 10px rgb(0 0 0 / 60%)
+}
+
+.image-container {
+  grid-column: 1/2;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.form-container {
+  grid-column: 2;
+  background: #fff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.image img {
+  width: 100%;
+  transform: scale(1.1);
+  object-fit: cover;
+  min-height: 400px;
+}
+.image {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+.form1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.form1 input {
+  border: none;
+  border-bottom: 1px solid #d5d8d8;
+  display: block;
+  width: 80%;
+  height: 40px;
+  margin: 10px auto 20px auto;
+  font-size: 16px;
+  
+}
+
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: #a6abaa;
+  font-size: 13px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: #5f6e6b !important;
+}
+input:autofill {
+  box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: #5f6e6b !important;
+}
+
+.details {
+  color: #a6abaa;
+}
+
+#submit {
+  border-radius: 15px;
+  width: 50%;
+  background: #403df6;
+  color: #fff;
+  box-shadow: 0 0 10px rgb(0 0 0 / 60%);
+  border: none;
+}
+
+#submit:hover {
+    cursor: pointer;
+    box-shadow: 0 0 18px rgb(0 0 0 / 80%);
+    
+}
+
+@media screen and (max-width: 770px) {
+    .form-group {
+        display: block;
+        border-radius: 10px;
+        position: absolute;
+        top: 100px;
+      }
+
+      .img-container{
+          overflow: hidden;
+          border-radius: 10px;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+      }
+      .image {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+
+      .form-container {
+        border-bottom-left-radius: 15px;
+      }
+      
+      
+}
+

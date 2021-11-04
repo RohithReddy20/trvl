@@ -1,0 +1,30 @@
+
+
+.sign-up {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 3rem; */
+  }
+
+  .sign-up {
+    background-image: linear-gradient(to right top, #01a8b0, #078889, #096966, #084b45, #042f29),linear-gradient(to right top, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    /* font-size: 100px; */
+  }
+
+  @media screen and (max-width: 770px) {
+    .sign-up {
+      height: 140vh;
+    }
+  }
+
+  @media screen and (min-width: 510px) and (max-width: 770px) {
+      .sign-up {
+        height: 170vh;
+      }
+  }
